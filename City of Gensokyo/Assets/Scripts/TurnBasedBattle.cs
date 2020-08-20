@@ -16,8 +16,8 @@ public class TurnBasedBattle : MonoBehaviour
 
     public TurnBasedBattle()
     {
-        playerBand = new Band();
-        enemyBand = new Band();
+        playerBand = GameObject.AddComponent(typeof(Band));
+        enemyBand = GameObject.AddComponent(typeof(Band));
     }
 
     // Called when player submits a combat action
