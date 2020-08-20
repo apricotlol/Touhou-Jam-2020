@@ -6,7 +6,6 @@ public class Band : MonoBehaviour
 {
 
     private int health;
-    private int energy;
 
     public Band()
     {
