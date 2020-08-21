@@ -6,20 +6,26 @@ public class Band : MonoBehaviour
 {
 
     public int health = 200;
-    private string state = "singer";
+    public string b_name;
+    private string state = "null";
 
-    public string getBandState()
+    //have audio clips
+
+
+
+    public string getBandMember()
     {
         return state;
     }
 
-    public void setBandState(string newState)
+    public void setBandMember(string newState)
     {
         state = newState;
     }
     public bool updateHealth(int updateValue)
     {
         health = health + updateValue;
+        Debug.Log(b_name + "HP is at" + health);
         if(health <= 0) return true;
         return false;
     }
